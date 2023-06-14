@@ -1,0 +1,35 @@
+/* 
+ESTILOS NAVBAR
+*/
+.navbar{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.navbar-ele{
+    color: white;
+    float: right;
+}
+/* 
+ESTILOS FOOTER
+*/
+.foot{
+    padding: 10px;
+    background-color: #ccc;
+}
+/* 
+ESTILOS TABLAS DE USUARIOS
+*/
+.tabla{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 90%;
+}
+.fila-borde-b{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.img{
+    border-radius: 10px;
+    width: 50%;
+}

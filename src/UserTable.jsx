@@ -1,34 +1,46 @@
 import React, { Fragment } from "react";
 
 const UserTable = (props) => {
-  console.log(props.user);
+  console.log(props.pic.results);
   return (
     <Fragment>
       {props.user.map((usuario) => {
         return (
-          <div className="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            <table key={usuario.id} className="tabla" style={{borderRadius:5}}>
-            <tr>
-              <th>Nombre: {usuario.name}</th>
-            </tr>
-            <tr>
-              <td>Email: {usuario.email}</td>
-            </tr>
-            <tr>
-              <td>Ciudad: {usuario.address.city}</td>
-            </tr>
-            <tr>
-              <td>Compañia: {usuario.company.name} </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="" alt="" />
-              </td>
-            </tr>
-          </table>
+          <div key={usuario.id} className="col-xs-6 col-sm-4 md-lg-4 col-lg-4">
+            <table className="tabla my-20">
+              <thead>
+                <tr>
+                  <th className="fila-borde-b">Nombre: {usuario.name}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="fila-borde-b">Email: {usuario.email}</td>
+                </tr>
+                <tr>
+                  <td className="fila-borde-b">
+                    Ciudad: {usuario.address.city}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="fila-borde-b">
+                    Compañia: {usuario.company.name}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pad txt-center">
+                    <img
+                      className="img"
+                      src=""
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         );
-      })}
+      })
+      }
     </Fragment>
   );
 };
