@@ -11,10 +11,12 @@ const App = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((respuesta) => respuesta.json())
       .then((data) => { 
-        setPosts(data); 
-        fetch("https://randomuser.me/api/?results="+data.length)
+        fetch("https://randomuser.me/api/?results="+data.length+"&inc=picture")
           .then((respuesta) => respuesta.json())
-          .then((imagen) => setPicture(imagen));
+          .then((imagen) =>{
+            setPosts(data); 
+            setPicture(imagen)
+          });
       });
   }, []); 
   return (
