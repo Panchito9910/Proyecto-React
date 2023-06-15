@@ -6,15 +6,15 @@ const UserTable = (props) => {
       {props.user.map((usuario,index) => {
         return (
           <div key={usuario.id} className="col-xs-12 col-sm-6 col-md-4 col-lg-4 borde my-20 p-10">
-            <table className="tabla">
+            <table className="tabla txt-center">
               <thead>
                 <tr>
-                  <th className="fila-borde-b">{usuario.name}</th>
+                  <th className="fila-borde-b">Nombre: {usuario.name}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="fila-borde-b">{usuario.email}</td>
+                  <td className="fila-borde-b">Email: {usuario.email}</td>
                 </tr>
                 <tr>
                   <td className="fila-borde-b">
