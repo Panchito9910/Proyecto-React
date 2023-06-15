@@ -5,16 +5,16 @@ const UserTable = (props) => {
     <Fragment>
       {props.user.map((usuario,index) => {
         return (
-          <div key={usuario.id} className="col-xs-12 col-sm-4 md-lg-4 col-lg-4">
-            <table className="tabla my-20">
+          <div key={usuario.id} className="col-xs-12 col-sm-6 col-md-4 col-lg-4 borde my-20 p-10">
+            <table className="tabla">
               <thead>
                 <tr>
-                  <th className="fila-borde-b">Nombre: {usuario.name}</th>
+                  <th className="fila-borde-b">{usuario.name}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="fila-borde-b">Email: {usuario.email}</td>
+                  <td className="fila-borde-b">{usuario.email}</td>
                 </tr>
                 <tr>
                   <td className="fila-borde-b">
@@ -27,7 +27,7 @@ const UserTable = (props) => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="pad txt-center">
+                  <td className="p-10 txt-center">
                     <img className="img" src={props.pic.results[index].picture.large}/>
                   </td>
                 </tr>

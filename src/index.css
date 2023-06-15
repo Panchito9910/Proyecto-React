@@ -44,11 +44,14 @@ body{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.pad{
+.p-10{
 	padding: 10px;
 }
 .txt-center{
 	text-align: center;
+}
+.m-auto{
+	margin: auto;
 }
 /*=============================================
 PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc

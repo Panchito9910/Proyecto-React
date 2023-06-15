@@ -3,12 +3,21 @@ ESTILOS NAVBAR
 */
 .navbar{
     padding: 10px;
-    background-color: black;
+    background-color: #818181;
     color: white;
 }
 .navbar-ele{
     color: white;
-    float: right;
+    padding: 10px;
+}
+.navbar-ele:hover{
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+.logo{
+    width: 100px;
+    object-fit: cover;
 }
 /* 
 ESTILOS FOOTER
@@ -21,9 +30,10 @@ ESTILOS FOOTER
 ESTILOS TABLAS DE USUARIOS
 */
 .tabla{
-    border: 1px solid black;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
     border-radius: 20px;
-    width: 90%;
+    width: 100%;
 }
 .fila-borde-b{
     border-bottom: 1px solid #ccc;
@@ -31,5 +41,6 @@ ESTILOS TABLAS DE USUARIOS
 }
 .img{
     border-radius: 10px;
-    width: 50%;
+    object-fit: cover;
+    width: 150px;
 }
